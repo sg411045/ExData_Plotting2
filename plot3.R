@@ -18,7 +18,7 @@ names(plotColors) <- levels(baltimoreDataSummary$type)
 colorScale <- scale_colour_manual(name = "Source",values = plotColors)
 
 # plot
-p <- ggplot(bdata,aes(bdata$year,bdata$Emissions,colour = as.factor(bdata$type))) + geom_point() + geom_line() + colorScale
+p <- ggplot(baltimoreDataSummary,aes(baltimoreDataSummary$year,baltimoreDataSummary$Emissions,colour = as.factor(baltimoreDataSummary$type))) + geom_point() + geom_line() + colorScale
 
 # annotate
 p <- p + labs(x="Year", y="PM2.5 Emissions", title="Baltimore city PM2.5 Emissions", color="Source")
