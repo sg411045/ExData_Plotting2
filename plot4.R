@@ -1,6 +1,7 @@
 library(dplyr)
 library(dplyr)
 library(ggplot2)
+library(RColorBrewer)
 
 # read the data
 NEI <- readRDS("summarySCC_PM25.rds")
